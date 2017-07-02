@@ -1,0 +1,117 @@
+/* === Here are all media requests without mobile version === */
+
+@media screen and (max-width: 1320px) and (min-width: 1001px) {
+    
+    /* === Header === */
+    
+    header .photo-header {
+        margin: auto 0;
+        padding: 0 100px 0 0;
+    }
+    
+    
+    /* === About === */
+    
+    main .about .about-jovi p {
+        width: 900px;
+    }
+    
+    main .about .rows .first-row .supp .img1,
+    main .about .rows .first-row .res .img2,
+    main .about .rows .second-row .safe .img3,
+    main .about .rows .second-row .mob .img4 {
+        margin: auto 25px auto -10px;
+    }
+    
+    
+    /* === Common Styles === */
+    
+    main .cookies p {
+        padding: 0 175px 30px;
+    }
+    
+    main .caption-row .description-cap {
+        margin: 0 50px 0 0;
+    }   
+    
+    
+    /* === Explore === */
+    
+    main .explore .description .image-column {
+        padding: 0 0 0 50px;
+    }
+    
+    main .explore .description .column {
+        padding: 0 0 0 50px;
+    }
+    
+    main .explore .exp-gallery .gallery {
+        height: 375px;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img4,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .frank,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect,
+    main .explore .exp-gallery .gallery .content .grid figure figcaption{
+        width: 300px;
+        height: 375px;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img4,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect {
+        height: 177px;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .extra {
+        padding: 0;
+        
+        width: 350px;
+        height: 375px;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath h1 {
+        margin: 40px 0 0 0;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect h1 {
+        margin: 40px 0 0 0;
+    }
+
+    main .explore .exp-gallery .gallery .content .grid .effect p {
+        bottom: 0;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath h1,
+    main .explore .exp-gallery .gallery .content .grid .effect h1 {
+        font-size: 40px;
+    }
+    
+    
+    /* === Team === */
+    
+    main .team .description .image-column {
+        padding: 0 50px 0 0;
+    }
+    
+    main .team .description .column {
+        margin: 0 50px 0 0;
+    }
+    
+    main .team .developers .ch-grid li {
+        margin: 0;
+    }
+    
+    
+    /* === Contacts === */
+    
+    main .contacts .release .cont-from,
+    main .contacts .release .cont-media {
+        width: 500px;
+    }
+    
+}

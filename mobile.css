@@ -1,0 +1,358 @@
+/* === Mobile Version === */
+
+@media screen and (max-width: 1000px) {
+    /* === Body === */
+    
+    body {
+        min-width: 400px;
+        width: 100%
+    }
+    
+    
+    /* === Invisible blocks === */
+    
+    header nav,
+    header nav a,
+    main .caption-row .description-cap,
+    main .caption-row .description-cap p,
+    main .about .rows ul li,
+    main .description .image-column,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .frank,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .frank,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath figcaption,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect figcaption {
+        display: none;
+        position: absolute;
+    }
+    
+    
+    /* === Header Section === */
+    
+    header {
+        height: 67px; 
+        width: 100%;
+    }
+    
+    header .photo-header {
+        margin: auto;
+        padding: 0;
+    }
+    
+    
+    /* === Home Section === */
+    
+    main .home {
+        height: 470px;
+        background-image: url("images/01.jpg");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    main .home .main-photo img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    main .home .logo-header-first,
+    main .home .logo-header-second {
+        font-size: 25px;
+    }
+    
+    main .home .logo-header-first {
+        margin: -150px 0 0 0;
+    }
+
+    main .home .logo-header-second {
+        margin: 20px 0 0 0;
+    }
+    
+    
+    /* === Common Styles Section === */
+    
+    main .caption-row {
+        height: 135px;
+    }
+    
+    main .caption-row .caption {
+        width: 100%;
+    }
+    
+    main .caption-row .caption p {
+        width: 400px;
+        font-size: 70px;
+        text-align: center;
+    }
+    
+    main .cookies {
+        height: 400px;
+    }
+    
+    main .description {
+        height: 400px;
+        background-image: none;
+    }
+    
+    main .description .column {
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .description .column h1 {
+        font-size: 70px;
+        padding-bottom: 100px;
+    }
+    
+    main .description .column .tagline {
+        font-size: 29px;
+        margin-top: -70px;
+    }
+    
+    main .description .column .text {
+        padding: 0 10px;
+    }
+    
+    
+    /* === About Section === */
+    
+    main .about .rows {
+        height: 490px;
+        width: 100%;
+    }
+    
+    main .about .rows .first-row .supp,
+    main .about .rows .first-row .res,
+    main .about .rows .second-row .safe,
+    main .about .rows .second-row .mob {
+        flex-direction: column;
+    }
+    
+    main .about .rows .first-row .supp .img1,
+    main .about .rows .first-row .res .img2,
+    main .about .rows .second-row .safe .img3,
+    main .about .rows .second-row .mob .img4 {
+        margin: 40px 0 20px;
+    }
+    
+    main .about .rows .first-row,
+    main .about .rows .second-row {
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1000px;
+        min-width: 500px;
+    }
+    
+    main .about .rows h1 {
+        margin: 0 auto;
+        padding: 0 0 20px;
+    }
+    
+    main .about .about-jovi {
+        height: 400px;
+    }
+    
+    main .about .about-jovi .jovi-img {
+        height: 400px;
+        position: absolute;
+        background-attachment: local;
+        background-image: url(images/02.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    main .about .about-jovi h1 {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    
+    main .about .about-jovi p {
+        font-size: 20px;
+        width: 600px;
+    }
+    
+    
+    /* === Explore Section === */
+    
+    main .explore .description .column {
+        padding: 0;
+    }
+    
+    main .explore .exp-gallery .gall {
+        height: 135px;
+    }
+    
+    main .explore .exp-gallery .gallery,
+    main .explore .exp-gallery .gallery .content .grid{
+        height: 960px;
+    }
+    main .explore .exp-gallery .gallery .content .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img4,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect{
+        width: 400px;
+        height: 220px;    
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img4 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1 {
+        background-image: url(images/08.jpg);
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2 {
+        background-image: url(images/11.jpg);
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img3 {
+        background-image: url(images/09.jpg);
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .extra .effect .img4 {
+        background-image: url(images/10.jpg);
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .extra {
+        justify-content: space-around;
+        height: 480px;
+    }
+    
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover .img1,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover .img2,
+    main .explore .exp-gallery .gallery .content .grid .extra .effect:hover .img3, 
+    main .explore .exp-gallery .gallery .content .grid .extra .effect:hover .img4 {
+        transform: none;
+    }
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover p,
+    main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover h1,
+    main .explore .exp-gallery .gallery .content .grid .effect:hover p,
+    main .explore .exp-gallery .gallery .content .grid .effect:hover h1 {
+        opacity: 0;
+        transform: none;
+    }
+    
+    main .explore .retro-image {
+        height: 400px;
+        background-image: url(images/03.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    /* === Team Section === */
+    
+    main .team .description .column {
+        padding: 0;
+    }
+    
+    main .team .developers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        min-height: 400px;
+        height: auto;
+        max-height: 1200px;
+    }
+        
+    main .team .developers ul li {
+        padding: 50px;    
+    }
+    
+    main .team .developers .ch-item .ch-info-wrap {
+        box-shadow: none;
+    }
+    main .team .developers .ch-item:hover .ch-info {
+        transform: none;
+    }
+    
+    main .team .cafe-image {
+        height: 400px;
+        background-image: url(images/04.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    /* === Contacts Section === */
+    
+    main .contacts .release {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        height: 600px;
+    }
+    
+    main .contacts .release .cont-form {
+        height: 60%;
+    }
+    
+    main .contacts .release .cont-form form input[type="text"],
+    main .contacts .release .cont-form form input[type="email"],
+    main .contacts .release .cont-form form input[type="tel"] {
+        width: 250px;
+    }
+    
+    main .contacts .release .cont-form form input[type="tel"] {
+        margin: 10px 10px 40px 10px;
+    }
+    
+    main .contacts .release .cont-media {
+        height: 40%;
+    }
+    
+    main .contacts .release .cont-media .social {
+        padding: 0;
+    }
+    
+    main .contacts .release .cont-media .social .social-facebook,
+    main .contacts .release .cont-media .social .social-twitter,
+    main .contacts .release .cont-media .social .social-google,
+    main .contacts .release .cont-media .social .social-instagram {
+        background-size: 70px 70px;
+        
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    /* === Footer === */
+    
+    footer p {
+        font-size: 25px;
+    }
+    
+    footer .footer-bckg-img {
+        background-image: url(images/05.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    footer .footer-logo img{
+        width: 210px;
+        height: 35px;
+    }
+}

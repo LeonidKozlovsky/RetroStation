@@ -1,0 +1,1007 @@
+/* === CSS Reset Section === */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* === Fonts Section === */
+
+@font-face {
+    font-family: black-coffee;
+    src: url("fonts/Black-coffee.ttf");
+}
+
+@font-face {
+    font-family: master-of-break;
+    src: url("fonts/master_of_break.otf");
+    src: url("fonts/master_of_break.ttf");
+}
+
+
+/* === Header Section === */
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    
+    height: 67px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 0 0 100px;
+}
+
+header nav > a {
+    font-family: black-coffee;
+    font-size: 30px;
+    
+    padding: 0 20px;
+}
+
+header .photo-header {
+    margin: auto 200px auto 0;
+}
+
+
+/* === Home Section === */
+
+main .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), 
+        linear-gradient(40deg, #fffbf2 10px, transparent 11px), url("images/01.jpg"); 
+    background-repeat:  repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, cover;
+    background-position: bottom, bottom, center;
+    
+    width: 100%;
+    height: 900px;
+}
+
+main .home .logo-header-first,
+main .home .logo-header-second {
+    font-family: black-coffee;
+    font-size: 30px;
+    
+    text-align: center;
+    
+    padding: 5px 10px;    
+    margin: 0 auto;
+    
+    z-index: 5;
+}
+
+main .home .logo-header-first {
+    margin: -150px 0 0 0;
+}
+
+main .home .logo-header-second {
+    margin: 30px 0 0 0;
+}
+
+
+/* === Common Styles Section === */
+
+main .caption-row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 250px;
+}
+
+main .caption-row .caption {
+    font-family: master-of-break;
+    font-size: 96px;
+    
+    width: 650px;
+}
+
+main .caption-row .description-cap p,
+main .caption-row .caption p{
+    text-align: center;
+    vertical-align: middle;
+    
+    margin: auto;
+    
+    max-width: 650px;
+}
+
+main .caption-row .description-cap {
+    font-size: 1.3em;
+    
+    line-height: 25px;
+    
+    padding: 0 0 0 100px;
+
+    width: 510px;
+}
+
+main .cookies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 406px;
+}
+
+main .cookies h1 {
+    font-family: master-of-break;
+    font-size: 57px;
+    
+    text-align: center;
+
+    padding: 70px 0 20px 0;
+    margin: -50px auto 0 auto;
+}
+
+main .cookies p {
+    font-size: 1.3em;
+    
+    line-height: 25px;
+    text-align: center;
+    
+    padding: 0 0 50px;
+    margin: 0 auto;
+    
+    width: 510px;
+}
+
+main .cookies .start {
+    border-radius: 10px;
+    
+    text-align: center;
+    
+    padding: 10px 0;
+    margin: 0 auto;
+    
+    width: 180px;
+}
+
+main .cookies .start:hover {
+    cursor: pointer;
+}
+
+main .cookies .start a {
+    font-family: black-coffee;
+    font-size: 39px;
+}
+
+main .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), 
+        linear-gradient(40deg, #fffbf2 10px, transparent 11px),
+        linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px);
+    background-repeat:  repeat-x, repeat-x, repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, 15px 15px, 15px 15px;
+    background-position: bottom, bottom, top, top;
+    
+    width: 100%;
+    height: 500px;
+}
+
+main .description .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .description .column h1 {
+    font-family: black-coffee;
+    font-size: 96px;
+    
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+main .description .column .tagline {
+    font-family: black-coffee;
+    font-size: 30px;
+    
+    text-align: center;
+    
+    padding: 5px 0;
+    margin: 10px 30px;
+    
+    width: 250px;
+}
+
+main .description .column .text {
+    font-size: 21px;
+    
+    text-align: center;
+    white-space: normal;
+    
+    min-width: 200px;
+    width: 100%;
+    max-width: 510px;
+}
+
+
+/* === About Section === */
+
+main .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+}
+
+main .about .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 500px;
+}
+
+main .about .rows .first-row,
+main .about .rows .second-row {
+    display: inline-flex;
+    justify-content: space-around;
+    
+    min-width: 1000px;
+    max-width: 1300px;
+    width: 100%;
+    height: 250px;
+}
+
+main .about .rows h1 {
+    font-size: 39px;
+    font-family: black-coffee;
+    
+    padding: 0 0 10px;
+    margin-left: -20px;
+}
+
+main .about .rows .first-row .supp,
+main .about .rows .first-row .res,
+main .about .rows .second-row .safe,
+main .about .rows .second-row .mob {
+    display: inline-flex;
+    
+    height: 250px;
+}
+
+main .about .rows li {
+    font-size: 1.3em;
+    
+    line-height: 30px;
+    
+    list-style: disc;
+    
+    padding-right: 10px;
+}
+
+main .about .rows .first-row ul,
+main .about .rows .second-row ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .about .rows .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .about .rows .first-row .supp .img1,
+main .about .rows .first-row .res .img2,
+main .about .rows .second-row .safe .img3,
+main .about .rows .second-row .mob .img4 {
+    background-repeat: no-repeat;
+    background-size: 128px 128px;
+    
+    margin: auto 50px auto;
+    
+    width: 128px;
+    height: 128px;
+}
+
+main .about .about-jovi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position: relative;
+    
+    height: 600px;
+    width: 100%;
+    
+    z-index: 0;
+}    
+
+main .about .about-jovi .jovi-img {
+    background-attachment: local, local, local, local, fixed;
+    background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), linear-gradient(40deg, #fffbf2 10px, transparent 11px),
+        linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px), url(images/02.jpg);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x ,no-repeat;
+    background-size: 15px 15px, 15px 15px, 15px 15px, 15px 15px , cover;
+    background-position: bottom, bottom, top, top;
+    
+    opacity: .6;
+    
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    height: 600px;
+    
+    z-index: -1;
+}
+
+main .about .about-jovi h1 {
+    font-family: master-of-break;
+    font-size: 51px;
+    
+    text-align: center;
+    line-height: 90px;
+    
+    padding: 0 15px;
+}
+
+main .about .about-jovi p {
+    font-size: 30px;
+    
+    text-align: right;
+    
+    margin: 0 auto;
+    
+    width: 1000px;
+}
+
+/* === Explore Section === */
+
+main .explore .description .image-column {
+    text-align: right;
+    
+    width: 650px;
+}
+
+main .explore .description .column {
+    padding: 0 0 0 100px;
+    
+    width: 510px;
+}
+
+main .explore .exp-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .explore .exp-gallery .gall{
+    display: flex;
+    align-items: center;
+    
+    height: 250px;
+}
+
+main .explore .exp-gallery .gall p {
+    font-family: black-coffee;
+    font-size: 96px;
+}
+
+main .explore .exp-gallery .gallery {
+	width: 100%;
+	height: 500px;
+}
+
+main .explore .exp-gallery .gallery .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .explore .exp-gallery .gallery .content .grid {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+main .explore .exp-gallery .gallery .content .grid figure {
+    display: flex;
+    
+    position: relative;
+    
+    overflow: hidden;
+    
+    text-align: center; 
+    
+    width: 400px;
+    height: 500px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .extra {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    
+    padding: 0 50px;
+    
+	width: 400px;
+	height: 500px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2 {
+    background-repeat:  repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, cover;
+    background-position: bottom, bottom, center;
+    
+    position: absolute;
+    
+    width: 400px;
+    height: 500px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img4 {
+    background-repeat:  repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, 100% 100%;
+    background-position: bottom, bottom, center;
+    
+    position: absolute;
+    
+    width: 400px;
+	height: 225px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1 {
+    background-image: linear-gradient(320deg, #2b1411 10px, transparent 11px), 
+        linear-gradient(40deg, #2b1411 10px, transparent 11px), url(images/08.jpg);
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2 {
+	background-image: linear-gradient(320deg, #2b1411 10px, transparent 11px), 
+        linear-gradient(40deg, #2b1411 10px, transparent 11px), url(images/11.jpg);
+}
+
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img3 {	
+	background-image: linear-gradient(320deg, #2b1411 10px, transparent 11px), 
+        linear-gradient(40deg, #2b1411 10px, transparent 11px), url(images/09.jpg);
+}  
+
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img4 {
+	background-image: linear-gradient(320deg, #2b1411 10px, transparent 11px), 
+        linear-gradient(40deg, #2b1411 10px, transparent 11px), url(images/10.jpg);
+}  
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .frank,
+main .explore .exp-gallery .gallery .content .grid .extra .effect .frank {
+	background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), 
+        linear-gradient(40deg, #fffbf2 10px, transparent 11px),
+        linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px);
+    background-repeat: repeat-x,repeat-x,repeat-x,repeat-x;
+    background-size: 15px 15px, 15px 15px, 15px 15px, 15px 15px;
+    background-position: bottom, bottom, top, top;
+    
+    position: relative;
+    
+    width: 400px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath,
+main .explore .exp-gallery .gallery .content .grid .extra .effect {
+    width: 400px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath {
+	height: 500px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .extra .effect {
+	height: 225px;
+}
+
+main .explore .exp-gallery .gallery .content .grid figure figcaption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;  
+    
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    
+    width: 400px;
+	height: 175px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img1,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath .img2,
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img3,
+main .explore .exp-gallery .gallery .content .grid .extra .effect .img4 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath h1,
+main .explore .exp-gallery .gallery .content .grid .effect h1 {
+	font-size: 57px;
+	font-family: master-of-break;
+    
+    position: absolute;
+	
+	right: 0;
+	left: 0;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect h1,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath h1 {
+    margin: -50px 0 0 0;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath p,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath h1,
+main .explore .exp-gallery .gallery .content .grid .effect p,
+main .explore .exp-gallery .gallery .content .grid .effect h1 {
+	opacity: 0;
+    
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,200px,0);
+	transform: translate3d(0,200px,0);
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath p,
+main .explore .exp-gallery .gallery .content .grid .effect p {
+    font-size: 1.1em;
+    
+    line-height: 25px;
+    letter-spacing: 1px;
+    
+    position: absolute; 
+    
+    bottom: 0;
+	left: 0;
+    
+	padding: 0 30px 30px 30px;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect p {
+    bottom: 10px; 
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover .img1,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover .img2 {
+	-webkit-transform: translate3d(0,-175px,0);
+    transform: translate3d(0,-175px,0);
+}
+
+main .explore .exp-gallery .gallery .content .grid .extra .effect:hover .img3, 
+main .explore .exp-gallery .gallery .content .grid .extra .effect:hover .img4 {
+	-webkit-transform: translate3d(0,-225px,0);
+    transform: translate3d(0,-225px,0);
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover p,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath:hover h1,
+main .explore .exp-gallery .gallery .content .grid .effect:hover p,
+main .explore .exp-gallery .gallery .content .grid .effect:hover h1 {
+    opacity: 1;
+    
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+main .explore .retro-image {
+    background-attachment: local, local, local, local, fixed;
+    background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), linear-gradient(40deg, #fffbf2 10px, transparent 11px),
+        linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px),
+        url(images/03.jpg);
+    background-repeat:  repeat-x, repeat-x, repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, 15px 15px, 15px 15px, cover;
+    background-position: bottom, bottom, top, top;
+    
+    opacity: .6;
+    
+    width: 100%;
+    height: 600px;
+    
+    z-index: 0;
+}
+
+
+/* === Team Section === */
+
+main .team .description .column {
+    padding: 0 0 0 100px;
+    
+    width: 510px;
+}
+
+main .team .description .image-column {
+    text-align: center;
+    
+    width: 650px;
+}
+
+main .team .developers {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    height: 500px;
+}
+
+main .team .developers h2 {
+    font-family: black-coffee;
+    font-size: 35px;
+    
+    padding: 15px 0 0 0;
+}
+
+main .team .developers .ch-grid {
+	display: block;
+    
+    text-align: center;
+	list-style: none;
+    
+    padding: 0;
+    
+	width: 100%;
+}
+
+main .team .developers ul li {
+    padding: 0 10px;
+}
+
+main .team .developers .ch-grid li {
+	display: inline-block;
+    
+    margin: 0 20px;
+    
+    width: 220px;
+	height: 220px;
+}
+
+main .team .developers .ch-item {
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    
+    position: relative;
+    
+    width: 100%;
+	height: 100%;
+}
+
+main .team .developers .ch-info-wrap {
+	border-radius: 50%;
+	transition: all .4s ease-in-out;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+    perspective: 800px;
+    
+    position: absolute;
+    
+    top: 20px;
+	left: 20px;
+    
+    width: 180px;
+	height: 180px;
+}
+
+main .team .developers .ch-info {	
+	border-radius: 50%;
+	transition: all .4s ease-in-out;
+	transform-style: preserve-3d;
+    
+    position: absolute;
+    
+    width: 180px;
+	height: 180px;
+}
+
+main .team .developers .ch-info > div {
+	display: block;
+	
+	border-radius: 50%;
+	background-position: center center;
+	backface-visibility: hidden;
+    
+    position: absolute;
+    
+    width: 100%;
+	height: 100%;
+}
+
+main .team .developers .ch-info .ch-info-back {
+	transform: rotate3d(0,1,0,180deg);
+}
+
+main .team .developers .ch-img-1,
+main .team .developers .ch-img-2,
+main .team .developers .ch-img-3,
+main .team .developers .ch-img-4 {
+    background-size: 220px 220px;
+}
+
+main .team .developers .ch-img-1 { 
+	background-image: url(images/face1.jpg);
+}
+
+main .team .developers .ch-img-2 { 
+	background-image: url(images/face2.jpg);
+}
+
+main .team .developers .ch-img-3 { 
+	background-image: url(images/face3.jpg);
+}
+
+main .team .developers .ch-img-4 {
+    background-image: url(images/face4.jpg);
+}
+
+main .team .developers .ch-info h3 {
+	font-family: black-coffee;
+	font-size: 48px;
+    
+    text-transform: uppercase;
+	letter-spacing: 2px;
+    
+    padding-top: 40px;
+	margin: 0 15px;
+	
+	height: 90px;
+}
+
+main .team .developers .ch-info p {
+	font-size: 18px;
+    
+    border-top: 1px solid rgba(255,255,255,0.5);
+    
+    padding: 10px 5px;
+	margin: -40px 30px 0 30px;
+}
+
+main .team .developers .ch-item:hover .ch-info-wrap {
+	box-shadow: 
+		0 0 0 0 rgba(255,255,255,0.8), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+main .team .developers .ch-item:hover .ch-info {
+	transform: rotate3d(0,1,0,-180deg);
+}
+
+main .team .cafe-image {
+    background-attachment: local, local, local, local, fixed;
+    background-image: linear-gradient(320deg, #fffbf2 10px, transparent 11px), 
+        linear-gradient(40deg, #fffbf2 10px, transparent 11px),
+        linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px),
+        url(images/04.jpg);
+    background-repeat:  repeat-x, repeat-x, repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, 15px 15px, 15px 15px, cover;
+    background-position: bottom, bottom, top, top;
+    
+    opacity: 0.6;
+    
+    width: 100%;
+    height: 600px;
+    
+    z-index: -1;
+}
+
+
+/* === Contacts Section === */
+
+main .contacts .release {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 500px;
+}
+
+main .contacts .release .cont-form,
+main .contacts .release .cont-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+    width: 650px;
+    height: 500px;
+}
+
+main .contacts .release .cont-form h1 {
+    font-family: black-coffee;
+    font-size: 39px;
+    
+    padding: 0 0 40px;
+}
+
+main .contacts .release .cont-form form input[type="text"],
+main .contacts .release .cont-form form input[type="email"],
+main .contacts .release .cont-form form input[type="tel"] {
+    border: 2px solid #4c2822;
+    border-radius: 5px;
+    
+    padding: 10px;
+    margin: 10px;
+    
+    width: 400px;
+}
+
+main .contacts .release .cont-form form input[type="tel"] {
+    margin: 10px 10px 30px 10px;
+}
+
+main .contacts .release .cont-form form input[type="submit"] {    
+    font-size: 39px;
+    font-family: black-coffee;
+    
+    border-radius: 10px;
+    
+    margin: 0 auto;
+    
+    width: 180px;
+}
+
+main .contacts .release .cont-form form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .contacts .release .cont-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+main .contacts .release .cont-media h1 {
+    font-family: black-coffee;
+    font-size: 39px;
+    
+    padding: 0 0 50px;
+}
+
+main .contacts .release .cont-media .social {
+    display: inline-flex;
+    justify-content: space-around;
+    
+    padding: 0 0 160px;
+}
+
+main .contacts .release .cont-media .social a {
+    margin: 0 10px;
+}
+
+main .contacts .release .cont-media .social img {
+    border-radius: 50%;
+}
+
+
+/* === Footer === */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    
+    width: 100%;
+    height: 200px;
+    
+    z-index: 0;
+}
+
+footer .footer-bckg-img {
+    background-attachment: local, local, fixed;
+    background-image: linear-gradient(40deg, transparent 10px, #fffbf2 11px), linear-gradient(320deg, transparent 10px, #fffbf2 11px),
+        url(images/05.jpg);
+    background-repeat:  repeat-x, repeat-x, no-repeat;
+    background-size: 15px 15px, 15px 15px, cover;
+    background-position: top, top, center;
+    
+    opacity: 0.6;
+    
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    height: 200px;
+    width: 100%;
+    
+    z-index: -1;
+}
+
+footer .chapter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 200px;
+}
+
+footer p {
+    font-size: 30px;
+    
+    position: relative;
+}
+
+footer .footer-logo {
+    position: relative;
+    
+    margin: 0 10px;
+}

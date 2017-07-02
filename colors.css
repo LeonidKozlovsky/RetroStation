@@ -1,0 +1,163 @@
+/* === Here are all color styles of the site  === */
+
+
+/* === Header colors === */
+
+header {
+    background-color: #2b1411;
+}
+
+header nav > a {
+    color: #fffccc;
+}
+
+
+/* === Main colors === */
+
+main {
+    background-color: #fffbf2;
+}
+
+main .home h1 {
+    background-color: #333333;
+    color: #fffccc;
+}
+
+
+/* === Common Styles colors === */
+
+main .caption-row {
+    background-color: #fffbf2;
+}
+
+main .caption-row .caption {
+    color: #4c2822;
+}
+
+main .caption-row .description-cap {
+    color: #4D4D4D;
+}
+
+main .cookies {
+    background-color: #fffbf2;
+}
+
+main .cookies h1 {
+    color: #4c2822;
+}
+
+main .cookies p {
+    color: #4d4d4d;
+}
+
+main .cookies .start a,
+main .contacts .release .cont-form form input[type="submit"] {
+    color: #ffffcc;
+    background-color: #2b1411;
+    border-color: #2b1411;
+}
+
+main .cookies .start {
+    background-color: #2b1411;
+}
+main .explore .description {
+    background-color: #99cccc;
+}
+
+main .description .column h1 {
+    color: #4c2822;
+}
+
+main .description .column .tagline {
+    background-color: #333333;
+    color: #fffccc;
+}
+
+main .description .column .text {
+    color: #4D4D4D;
+}
+
+
+/* === About colors === */
+
+main .about .rows {
+    background-color: #FFFFCC;
+}
+
+main .about .rows h1 {
+    color: #2b1411;
+}
+
+main .about .rows li {
+    color: #4d4d4d;
+}
+
+main .about .about-jovi h1,
+main .about .about-jovi p {
+    color: #ffffcc;
+}
+
+
+/* === Explore colors === */
+
+main .explore .exp-gallery .gall p {
+    color: #4c2822;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath,
+main .explore .exp-gallery .gallery .content .grid .extra .effect{
+    background-color: #2b1411;
+}
+
+main .explore .exp-gallery .gallery .content .grid .effect-goliath p,
+main .explore .exp-gallery .gallery .content .grid .effect-goliath h1,
+main .explore .exp-gallery .gallery .content .grid .effect p,
+main .explore .exp-gallery .gallery .content .grid .effect h1 {
+    color: #fffccc;
+}
+
+main .explore .retro-image,
+main .team .cafe_image {
+    background-color: #ffffcc;
+}
+
+/* === Team colors === */
+
+main .team .description {
+    background-color: #ffcc99;
+}
+
+main .team .developers h2 {
+    color: #2b1411;
+}
+main .team .developers .ch-info-wrap{
+    background: #f9f9f9;
+}
+
+main .team .developers .ch-info .ch-info-back {
+    background: #2b1411;
+}
+
+main .team .developers .ch-info h3,
+main .team .developers .ch-info p {
+	color: #fff;
+}
+
+
+/* === Contacts colors === */
+
+main .contacts .release .cont-form h1,
+main .contacts .release .cont-media h1 {
+    color: #4c2822;
+}
+
+
+/* === Footer colors === */
+
+footer {
+    background-color: #fffbf2;
+}
+
+footer p {
+    color: #fff;
+}
